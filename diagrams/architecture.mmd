@@ -1,0 +1,10 @@
+flowchart LR
+    H[Windows Host / Test Workstation]
+    W[VMware WAN Network]
+    F[OPNsense Firewall\nWAN em0 / LAN em1]
+    L[Isolated LAN\n192.168.237.0/24]
+    D[Damn Small Linux\nWeb and protocol services]
+    V[DVWA\nApache PHP MySQL]
+    H --> W --> F --> L
+    L --> D
+    L --> V

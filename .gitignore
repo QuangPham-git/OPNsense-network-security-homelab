@@ -1,0 +1,23 @@
+# Virtual machines and disk images
+*.vmdk
+*.vdi
+*.ova
+*.ovf
+*.iso
+*.vmem
+*.vmss
+*.vmsn
+
+# Captures, logs, and secrets
+*.pcap
+*.pcapng
+*.har
+*.log
+.env
+*.key
+*.pem
+cookies.txt
+
+# OS files
+.DS_Store
+Thumbs.db
