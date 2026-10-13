@@ -1,23 +1,49 @@
-# Virtual machines and disk images
-*.vmdk
-*.vdi
-*.ova
-*.ovf
-*.iso
-*.vmem
-*.vmss
-*.vmsn
-
-# Captures, logs, and secrets
+# Private working material and source captures
+/private/
+/raw/
+/exports/
+/backups/
+/screenshots/
+/upload/
+*.docx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.log
 *.pcap
 *.pcapng
 *.har
-*.log
-.env
-*.key
-*.pem
-cookies.txt
+*.dump
+*.vma*
+*.qcow2
+*.img
+*.iso
+*.tar*
+*.zip
 
-# OS files
+# Credentials and live configuration exports
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.ovpn
+*.conf
+config.xml
+config-*.xml
+tailscaled.state*
+id_rsa*
+id_ed25519*
+*credentials*
+*secrets*
+*auth-token*
+
+# Editor and OS temporary files
+*.swp
+*.tmp
+~$*
 .DS_Store
 Thumbs.db
